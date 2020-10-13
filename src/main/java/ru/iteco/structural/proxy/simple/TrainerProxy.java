@@ -10,7 +10,13 @@ public class TrainerProxy implements Trainer {
         if(trainer == null) {
             trainer = new TrainerImpl();
         }
+        extraMethod();
         trainer.process();
+        extraMethod();
         System.out.println("proxy complete.");
+    }
+
+    private void extraMethod() {
+        System.out.println("extraMethod");
     }
 }

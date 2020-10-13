@@ -13,7 +13,7 @@ public class Brandy extends CoffeeDecorator implements CoffeeIngredient {
 
     @Override
     public void showIngredient() {
-        super.showIngredient();
         System.out.println("Brandy");
+        super.showIngredient();
     }
 }
