@@ -15,7 +15,7 @@ public class Sugar
 
     @Override
     public void showIngredient() {
-        innerIngredient.showIngredient();
         System.out.println("Sugar");
+        innerIngredient.showIngredient();
     }
 }

@@ -13,7 +13,7 @@ public class Milk extends CoffeeDecorator implements CoffeeIngredient {
 
     @Override
     public void showIngredient() {
-        super.showIngredient();
         System.out.println("Milk");
+        super.showIngredient();
     }
 }

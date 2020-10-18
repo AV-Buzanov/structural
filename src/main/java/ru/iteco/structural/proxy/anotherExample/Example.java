@@ -15,13 +15,13 @@ public class Example {
 
         Path path = Paths.get("tmp.txt");
 
-        Parser fileser = (Parser) Proxy.newProxyInstance(classLoader, interfaces, invocationHandler);
-        fileser.read();
-        fileser.copy(path);
+//        Parser fileser = (Parser) Proxy.newProxyInstance(classLoader, interfaces, invocationHandler);
+//        fileser.read();
+//        fileser.copy(path);
 
-//        Parser mockParser = (Parser) Proxy.newProxyInstance(classLoader, interfaces, new MockExample());
-//        mockParser.read();
-//        mockParser.copy(path);
+        Parser mockParser = (Parser) Proxy.newProxyInstance(classLoader, interfaces, new MockExample());
+        System.out.println(mockParser.read());
+        System.out.println(mockParser.copy(path));
 
     }
 }
